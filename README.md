@@ -180,29 +180,6 @@ docker-compose up --build
 
 ---
 
-## 🌐 Deployment
-
-### 1. Deploy Frontend to Vercel
-1. Push your repository to GitHub.
-2. In the [Vercel Dashboard](https://vercel.com), click **Add New Project** and import your repo.
-3. Configure the build:
-   - **Root Directory:** `frontend`
-   - **Framework Preset:** `Vite`
-   - **Environment Variable:** `VITE_API_BASE_URL` = `https://<your-backend-url>/api`
-4. Click **Deploy**.
-
-### 2. Deploy Backend to Render
-1. In the [Render Dashboard](https://render.com), click **New Web Service**.
-2. Connect your repository and configure:
-   - **Root Directory:** `backend`
-   - **Runtime:** `Python 3`
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `uvicorn main:app --host 0.0.0.0 --port $PORT`
-   - **Plan:** Free
-3. Click **Create Web Service**.
-
----
-
 ## 🔌 API Endpoints
 
 | Method | Endpoint | Description |
